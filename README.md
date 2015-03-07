@@ -48,7 +48,7 @@ __ADDITIONAL USAGE NOTES__
 
 ### License
 
-MIT
+[MIT](LICENSE)
 
 Copyright (c) 2015 Sivakumar Kailasam.
 
