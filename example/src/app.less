@@ -70,7 +70,7 @@
     left: 100%;
     bottom: 50%;
     margin-bottom: -10%;
-    margin-left: 5%;
+    margin-left: -10%;
 }
 
 .quicktip__content.quicktip__direction--left {
@@ -83,8 +83,8 @@
 .quicktip__content.quicktip__direction--top {
     top: -100%;
     left: -50%;
-    margin-top: -15px;
-    margin-left: 5%;
+    margin-top: -5%;
+    margin-left: 25%;
 }
 
 .quicktip__content.quicktip__direction--bottom {
@@ -173,3 +173,39 @@ label {
     border-left-color: green;
 }
 
+.fancy-button {
+    background-color: #F5F5F5;
+    background-image: -webkit-linear-gradient(top,  #F5F5F5, #F1F1F1);
+    border: 1px solid rgba(0, 0, 0, 0.0980392);
+    color: #444444;
+    display: inline-block;
+    position: relative;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    height: 27px;
+    line-height: 27px;
+    margin-right: 16px;
+    min-width: 74px;
+    outline: 0;
+    padding: 0 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.fancy-button:hover{
+    border: 1px solid rgba(0, 0, 0, 0.2959795);
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.13);
+}
+  
+.fancy-button:active{  
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border: 1px solid rgba(0, 0, 0,0.25);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3959795);
+}
