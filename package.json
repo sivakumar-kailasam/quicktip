@@ -14,11 +14,11 @@
   },
   "dependencies": {
     "react": "^0.12.2",
-    "reactify": "^0.17.1"
+    "reactify": "^1.0.0"
   },
   "devDependencies": {
-    "react-component-gulp-tasks": "^0.1.1",
-    "gulp": "^3.8.10"
+    "react-component-gulp-tasks": "^0.4.0",
+    "gulp": "^3.8.11"
   },
   "browser": "src/Quicktip.js",
   "browserify": {
