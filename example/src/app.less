@@ -1,3 +1,110 @@
+/**
+ * Quicktip styles
+ */
+
+//Quicktip styles
+
+.quicktip__content {
+    display: inline-block;
+    background: lightgrey;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.quicktip__message {
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 10px;
+}
+
+
+.quicktip__arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid
+}
+
+.quicktip__direction--top .quicktip__arrow {
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: lightgray;
+}
+
+.quicktip__direction--top-left .quicktip__arrow {
+    right: 5px;
+    bottom: 0;
+    margin-bottom: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}
+
+.quicktip__direction--top-right .quicktip__arrow {
+    bottom: 0;
+    left: 5px;
+    margin-bottom: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}
+
+.quicktip__direction--right .quicktip__arrow{
+    top: 50%;
+    left: -5px;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: lightgray;
+}
+
+.quicktip__direction--left .quicktip__arrow {
+    top: 50%;
+    right: -5px;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: lightgray;
+}
+
+.quicktip__direction--bottom .quicktip__arrow {
+    top: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: lightgray;
+}
+
+.quicktip__direction--bottom-left .quicktip__arrow {
+    top: 0;
+    right: 5px;
+    margin-top: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000
+}
+
+.quicktip__direction--bottom-right .quicktip__arrow {
+    top: 0;
+    left: 5px;
+    margin-top: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000
+}
+
+
+.quicktip__content--hide {
+    display: none;
+}
+
+
+/*
+* Quicktip ends here
+ */
+
+
+
+
+
 /* 
 // Examples Stylesheet
 // -------------------
@@ -56,41 +163,16 @@ label {
 	color: #999;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.quicktip__content--hide {
-	display: none;
+.usecase {
+    margin: 20px;
 }
 
+.success {
+    background: green;
+    color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.success > .quicktip__arrow{
+    border-left-color: green;
+}
 

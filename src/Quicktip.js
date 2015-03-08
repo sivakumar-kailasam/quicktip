@@ -3,11 +3,13 @@ var classNames = require('classNames');
 
 var Quicktip = React.createClass({
 
+
 	getInitialState: function() {
 		return {
 			isTooltipHidden: true
 		}
 	},
+
 
 	getDefaultProps: function() {
 		return {
@@ -17,9 +19,6 @@ var Quicktip = React.createClass({
 		}
 	},
 
-	componentDidMount: function() {
-
-	},
 
 	showTooltip: function() {
 		this.setState({
@@ -27,15 +26,13 @@ var Quicktip = React.createClass({
 		});
 	},
 
+
 	hideTooltip: function() {
 		this.setState({
 			'isTooltipHidden': true
 		});
 	},
 
-	componentWillUnmount: function() {
-
-	},
 
 	render: function() {
 
@@ -66,6 +63,7 @@ var Quicktip = React.createClass({
 			</div>
 		);
 	}
+
 
 });
 
