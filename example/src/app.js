@@ -33,9 +33,9 @@ var App = React.createClass({
 
 		return (
 			<div>
-				{this.props.useCases.map(function(useCase){
+				{this.props.useCases.map(function(useCase,i ){
 					return (
-						<div className="usecase">
+						<div className="usecase" key={i}>
 							<Quicktip message={useCase.message}  direction={useCase.direction} classesToAdd={useCase.additionalClasses}>
 								<button className = "fancy-button">{useCase.contentToDisplay}</button>
 							</Quicktip>

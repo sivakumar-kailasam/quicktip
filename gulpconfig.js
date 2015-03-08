@@ -50,9 +50,7 @@ module.exports = {
 			'app.js'
 		],
 		// Stylesheets will be built by less 
-		stylesheets: [
-			'app.less'
-		]
+		less: 'app.less'
 	}
 	
 };
