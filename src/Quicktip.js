@@ -9,10 +9,11 @@ var Quicktip = React.createClass({
 		}
 	},
 
-	getDefaultProps: function(){
+	getDefaultProps: function() {
 		return {
-			message: '',
-			classesToAdd: ''
+			classesToAdd: '',
+			direction: 'left',
+			message: ''
 		}
 	},
 
@@ -20,12 +21,16 @@ var Quicktip = React.createClass({
 
 	},
 
-	showTooltip: function(){
-		this.setState({'isTooltipHidden': false});
+	showTooltip: function() {
+		this.setState({
+			'isTooltipHidden': false
+		});
 	},
 
-	hideTooltip: function(){
-		this.setState({'isTooltipHidden': true});
+	hideTooltip: function() {
+		this.setState({
+			'isTooltipHidden': true
+		});
 	},
 
 	componentWillUnmount: function() {
@@ -34,10 +39,20 @@ var Quicktip = React.createClass({
 
 	render: function() {
 
+		var directionClassNamesMap = {
+			left: 'quicktip__direction--left',
+			right: 'quicktip__direction--right',
+			top: 'quicktip__direction--top',
+			bottom: 'quicktip__direction--bottom'
+		};
+
 		var classesToUse = classNames({
-			'quicktip__content': true,
-			'quicktip__content--hide': this.state.isTooltipHidden
-		}, this.props.classesToAdd);
+				'quicktip__content': true,
+				'quicktip__content--hide': this.state.isTooltipHidden
+			},
+			this.props.classesToAdd,
+			directionClassNamesMap[this.props.direction]
+		);
 
 		return (
 			<div className="quicktip__container">
@@ -45,7 +60,8 @@ var Quicktip = React.createClass({
 					{this.props.children}
 				</span>
 				<div className={classesToUse}> 
-					{this.props.message}
+					<div className="quicktip__arrow"></div>
+					<div className="quicktip__message">{this.props.message}</div>
 				</div> 
 			</div>
 		);
