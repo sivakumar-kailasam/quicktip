@@ -3,9 +3,12 @@ var React = require('react');
 var PureRenderMixin = require('react/addons').addons.PureRenderMixin; //Awesome mixin!
 var classNames = require('classNames');
 
+
 var Quicktip = React.createClass({
 
+
 	mixins: [PureRenderMixin],
+
 
 	propTypes: {
 		classesToAdd: React.PropTypes.oneOfType([
