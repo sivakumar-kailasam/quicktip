@@ -8,7 +8,7 @@
 }
 .quicktip__content {
   display: inline-block;
-  background: lightgrey;
+  background: lightgray;
   position: absolute;
   white-space: nowrap;
   z-index: 1000;

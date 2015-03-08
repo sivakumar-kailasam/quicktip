@@ -2,6 +2,10 @@
  * Quicktip styles
  * @author Sivakumar Kailasam
  */
+
+@tooltipColor: lightgray;
+
+
 .quicktip__container {
     display: inline-block;
     position: relative;
@@ -9,7 +13,7 @@
 
 .quicktip__content {
     display: inline-block;
-    background: lightgrey;
+    background: @tooltipColor;
     position: absolute;
     white-space: nowrap;
     z-index: 1000;
@@ -35,7 +39,7 @@
     left: 50%;
     margin-left: -5px;
     border-width: 5px 5px 0;
-    border-top-color: lightgray;
+    border-top-color: @tooltipColor;
 }
 
 .quicktip__direction--right .quicktip__arrow{
@@ -43,7 +47,7 @@
     left: -5px;
     margin-top: -5px;
     border-width: 5px 5px 5px 0;
-    border-right-color: lightgray;
+    border-right-color: @tooltipColor;
 }
 
 .quicktip__direction--left .quicktip__arrow {
@@ -51,7 +55,7 @@
     right: -5px;
     margin-top: -5px;
     border-width: 5px 0 5px 5px;
-    border-left-color: lightgray;
+    border-left-color: @tooltipColor;
 }
 
 .quicktip__direction--bottom .quicktip__arrow {
@@ -59,7 +63,7 @@
     left: 50%;
     margin-left: -5px;
     border-width: 0 5px 5px;
-    border-bottom-color: lightgray;
+    border-bottom-color: @tooltipColor;
 }
 
 .quicktip__content--hide {
