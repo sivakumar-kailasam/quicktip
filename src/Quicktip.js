@@ -15,7 +15,8 @@ var Quicktip = React.createClass({
 		return {
 			classesToAdd: '',
 			direction: 'left',
-			message: ''
+			message: '',
+			closeDelay: 1000
 		}
 	},
 
@@ -24,13 +25,12 @@ var Quicktip = React.createClass({
 		this.setState({
 			'isTooltipHidden': false
 		});
+		var thisElem = this.getDOMNode();
 	},
 
 
 	hideTooltip: function() {
-		this.setState({
-			'isTooltipHidden': true
-		});
+		this.setState({ 'isTooltipHidden': true });
 	},
 
 
@@ -62,6 +62,7 @@ var Quicktip = React.createClass({
 				</div> 
 			</div>
 		);
+
 	}
 
 
