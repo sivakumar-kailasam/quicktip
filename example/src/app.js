@@ -25,6 +25,10 @@ var App = React.createClass({
 				message: 'I should show success theme',
 				contentToDisplay: 'Add additional class like success',
 				additionalClasses: 'success'
+			}, {
+				message: 'I will close a little after you move the cursor out',
+				contentToDisplay: 'Close with more delay',
+				closeDelay: 1000
 			}]
 		};
 
@@ -36,7 +40,7 @@ var App = React.createClass({
 				{this.props.useCases.map(function(useCase,i ){
 					return (
 						<div className="usecase" key={i}>
-							<Quicktip message={useCase.message}  direction={useCase.direction} classesToAdd={useCase.additionalClasses}>
+							<Quicktip message={useCase.message}  direction={useCase.direction} classesToAdd={useCase.additionalClasses} closeDelay={useCase.closeDelay}>
 								<button className = "fancy-button">{useCase.contentToDisplay}</button>
 							</Quicktip>
 						</div>

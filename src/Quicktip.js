@@ -1,3 +1,4 @@
+'use strict';
 var React = require('react');
 var classNames = require('classNames');
 
@@ -7,7 +8,7 @@ var Quicktip = React.createClass({
 	getInitialState: function() {
 		return {
 			isTooltipHidden: true
-		}
+		};
 	},
 
 
@@ -16,8 +17,8 @@ var Quicktip = React.createClass({
 			classesToAdd: '',
 			direction: 'left',
 			message: '',
-			closeDelay: 1000
-		}
+			closeDelay: 200
+		};
 	},
 
 
@@ -30,7 +31,10 @@ var Quicktip = React.createClass({
 
 
 	hideTooltip: function() {
-		this.setState({ 'isTooltipHidden': true });
+		var _this = this;
+		setTimeout(function(){
+			_this.setState({ 'isTooltipHidden': true });
+		}, _this.props.closeDelay);
 	},
 
 
