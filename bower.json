@@ -1,6 +1,6 @@
 {
   "name": "quicktip",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "quicktip",
   "main": "dist/quicktip.min.js",
   "homepage": "https://github.com/sivakumar-kailasam/quicktip",
