@@ -4,9 +4,9 @@ var React = require('react'),
 var App = React.createClass({
 	render: function() {
 		return (
-			<div>
-				<Quicktip />
-			</div>
+			<Quicktip message="This is the tooltip content">
+				<button className="fancy-button">Siva</button>
+			</Quicktip>
 		)
 	}
 });
