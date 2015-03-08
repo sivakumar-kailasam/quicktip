@@ -1,7 +1,7 @@
 {
   "name": "quicktip",
-  "version": "0.1.0",
-  "description": "quicktip",
+  "version": "1.0.0",
+  "description": "A minimal react.js tooltip component",
   "main": "src/Quicktip.js",
   "author": "Sivakumar Kailasam",
   "homepage": "https://github.com/sivakumar-kailasam/quicktip",
@@ -18,7 +18,7 @@
     "reactify": "^1.0.0"
   },
   "devDependencies": {
-    "react-component-gulp-tasks": "^0.4.0",
+    "react-component-gulp-tasks": "git+https://github.com/sivakumar-kailasam/react-component-gulp-tasks.git#master",
     "gulp": "^3.8.11"
   },
   "browser": "src/Quicktip.js",
