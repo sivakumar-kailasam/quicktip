@@ -13,6 +13,7 @@
     "url": "https://github.com/sivakumar-kailasam/quicktip/issues"
   },
   "dependencies": {
+    "classnames": "^1.1.4",
     "react": "^0.12.2",
     "reactify": "^1.0.0"
   },

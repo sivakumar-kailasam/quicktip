@@ -1,11 +1,18 @@
 var React = require('react');
-var classSet = require('react/lib/cx');
+var classNames = require('classNames');
 
 var Quicktip = React.createClass({
 
 	getInitialState: function() {
 		return {
 			isTooltipHidden: true
+		}
+	},
+
+	getDefaultProps: function(){
+		return {
+			message: '',
+			classesToAdd: ''
 		}
 	},
 
@@ -27,10 +34,10 @@ var Quicktip = React.createClass({
 
 	render: function() {
 
-		var classesToUse = classSet({
+		var classesToUse = classNames({
 			'quicktip__content': true,
 			'quicktip__content--hide': this.state.isTooltipHidden
-		});
+		}, this.props.classesToAdd);
 
 		return (
 			<div className="quicktip__container">
