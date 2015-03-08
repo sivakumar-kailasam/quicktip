@@ -1,14 +1,20 @@
 'use strict';
 var React = require('react');
+var PureRenderMixin = require('react/addons').addons.PureRenderMixin; //Awesome mixin!
 var classNames = require('classNames');
 
 var Quicktip = React.createClass({
 
+	mixins: [PureRenderMixin],
 
-	getInitialState: function() {
-		return {
-			isTooltipHidden: true
-		};
+	propTypes: {
+		classesToAdd: React.PropTypes.oneOfType([
+			React.PropTypes.string,
+			React.PropTypes.array
+		]),
+		direction: React.PropTypes.oneOf(['top', 'right', 'left', 'bottom']),
+		message: React.PropTypes.string,
+		closeDelay: React.PropTypes.number
 	},
 
 
@@ -22,18 +28,26 @@ var Quicktip = React.createClass({
 	},
 
 
+	getInitialState: function() {
+		return {
+			isTooltipHidden: true
+		};
+	},
+
+
 	showTooltip: function() {
 		this.setState({
 			'isTooltipHidden': false
 		});
-		var thisElem = this.getDOMNode();
 	},
 
 
 	hideTooltip: function() {
 		var _this = this;
-		setTimeout(function(){
-			_this.setState({ 'isTooltipHidden': true });
+		setTimeout(function() {
+			_this.setState({
+				'isTooltipHidden': true
+			});
 		}, _this.props.closeDelay);
 	},
 
