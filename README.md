@@ -30,8 +30,6 @@ npm install quicktip --save
 
 ## Usage
 
-__EXPLAIN USAGE HERE__
-
 ```
 var Quicktip = require('quicktip');
 
