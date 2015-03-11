@@ -32,7 +32,9 @@ module.exports = {
 		// The package dependencies are automatically build into
 		// a common bundle for the examples and excluded from the
 		// package build.
-		dependencies: dependencies
+		dependencies: dependencies,
+
+		less: COMPONENT_NAME + '.less'
 	},
 	
 	example: {
