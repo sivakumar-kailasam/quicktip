@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/* 
+// Examples Stylesheet
+// -------------------
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+  padding: 1em;
+}
+.footer {
+  margin-top: 50px;
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+  font-size: 12px;
+  color: #999;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  font-weight: 100;
+  margin: 0.5em 0;
+}
+label {
+  color: #999;
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: bold;
+  margin: 1em 0;
+  text-transform: uppercase;
+}
+.hint {
+  margin: 15px 0;
+  font-style: italic;
+  color: #999;
+}
+.usecase {
+  margin: 10%;
+  width: 30%;
+  float: left;
+}
+.success {
+  background: green;
+  color: white;
+}
+.success > .quicktip__arrow {
+  border-left-color: green;
+}
+.fancy-button {
+  background-color: #F5F5F5;
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  border: 1px solid rgba(0, 0, 0, 0.0980392);
+  color: #444444;
+  display: inline-block;
+  position: relative;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  height: 27px;
+  line-height: 27px;
+  margin-right: 16px;
+  min-width: 74px;
+  outline: 0;
+  padding: 0 8px;
+  text-align: center;
+  white-space: nowrap;
+}
+.fancy-button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2959795);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.13);
+}
+.fancy-button:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3959795);
+}
